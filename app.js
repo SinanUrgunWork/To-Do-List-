@@ -10,10 +10,9 @@ app.set('view engine', 'ejs');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
-//?retryWrites=true&w=majority/      "mongodb+srv://cluster0-ts5b5.mongodb.net/test" --username admin-David --password <yourPasswordHere>
+
 mongoose.connect("mongodb+srv://new-user:test@cluster0.n0uyyt9.mongodb.net/todolistDB" , {useNewUrlParser: true});
-//"mongodb+srv://admin-sinan:<test1234>@cluster0.n0uyyt9.mongodb.net/todolistDB"
-//db part
+
 const itemsSchema = {
   name: String
 };// we creat schema for db
